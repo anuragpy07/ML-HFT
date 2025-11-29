@@ -1,19 +1,24 @@
+<!-- Banner -->
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=32&duration=2800&color=00C6FF&center=true&vCenter=true&width=1100&lines=%F0%9F%93%88+ML+-+HFT;High+Frequency+Trading+Framework;Machine%2FDeep+Learning+on+Level-II+Orderbook+Data;Signals%2C+HFT+Factors%2C+Models+%26+PnL+Visualization" />
+</p>
+
 ## High Frequency Trading Framework with Machine/Deep Learning
 
-In this project, we provide a framework/pipeline for high frequency trading using machine/deep learning techniques. More advanced feature engineering (with depth trade and quote data) and models (such as pre-trained models) can be applied in this framework.
+In this project, we provide a framework/pipeline for high-frequency trading using machine learning and deep learning techniques. More advanced feature engineering (with depth, trade, and quote data) and models (such as pre-trained models) can be applied in this framework.
 
 ### Target
-- Extract trading signals from level-II orderbook data
-- Predict orderbook dynamics using machine learning and deep learning techniques
+- Extract trading signals from level-II order book data
+- Predict order book dynamics using machine learning and deep learning techniques
 
 ### Data
-The SGX FTSE China A50 Index Futures (a major Asia-Pacific index future traded on the Singapore Exchange) tick-level depth data are used.
+We use tick-level depth data of the SGX FTSE China A50 Index Futures (a major Asia-Pacific index future traded on the Singapore Exchange).
 
-### Strategy Pipline
+### Strategy Pipeline
 <img src="./Graph/pipline.png" width="650">
   
-### Orderbook Signals
-We use limit orderbook data to develop trading signals, including **Depth Ratio**, **Rise Ratio**, and **Orderbook Imbalance (OBI)**.
+### Order Book Signals
+We use limit order book data to develop trading signals, including **Depth Ratio**, **Rise Ratio**, and **Order Book Imbalance (OBI)**.
 
 <img src="./Graph/depth.png" width="650"> 
   
@@ -31,19 +36,19 @@ We use limit orderbook data to develop trading signals, including **Depth Ratio*
 
 <img src="./images/rise_1300_1600_w.png" width="750">
  
- ### Model Fitting
+### Model Fitting
 - Basic Models:
-  *  RandomForestClassifier
-  *  ExtraTreesClassifier
-  *  AdaBoostClassifier
-  *  GradientBoostingClassifier
-  *  Support Vector Machines
-  *  Other classifiers: Softmax, KNN, MLP, LSTM, etc.
+  * RandomForestClassifier  
+  * ExtraTreesClassifier  
+  * AdaBoostClassifier  
+  * GradientBoostingClassifier  
+  * Support Vector Machines  
+  * Other classifiers: Softmax, KNN, MLP, LSTM, etc.
 
 - Hyperparameters:
-  * Training window: 30min
-  * Test window: 10sec
-  * Prediction label: 15min forward
+  * Training window: 30 min  
+  * Test window: 10 sec  
+  * Prediction label: 15 min forward
    
 ### Performance Metrics
 - Prediction accuracy:
@@ -51,6 +56,7 @@ We use limit orderbook data to develop trading signals, including **Depth Ratio*
 <img src="./images/prediction.png" width="750">
 
 - Prediction Accuracy Series:
+
 <img src="./images/single_day_accuracy.png" width="800">
 
 - Cross Validation Mean Accuracy:
@@ -61,7 +67,6 @@ We use limit orderbook data to develop trading signals, including **Depth Ratio*
 
 <img src="./images/best_CV_result.png" width="800">
 
-   
 ### PnL Visualization
 <img src="./images/best_CV_result_all.png" width="800">
     
@@ -70,29 +75,29 @@ We use limit orderbook data to develop trading signals, including **Depth Ratio*
 **Feature Engineering**
 
 Other potentially useful signals:
-- volume imbalance signal
-- trade imbalance signal
-- technical indicators of bid and ask series (RSI, MACD...)
-- WAP/WPR, weighted average price, VWAP, TWAP
-- .....
+- Volume imbalance signal  
+- Trade imbalance signal  
+- Technical indicators of bid and ask series (RSI, MACD, etc.)  
+- WAP/WPR, weighted average price, VWAP, TWAP  
+- ...
 
-Signal generating techniques:
-- consider different weights on different level of orderbook data for a particular signal
-- consider moving average with period n (hyperparameter)
-- consider weighted average of signals, such as weighted average of trade imbalance and orderbook imbalance
-- Lasso regression, genetic programming
-- .....
- 
+Signal generation techniques:
+- Consider different weights for different levels of order book data for a particular signal  
+- Consider moving averages with period _n_ (hyperparameter)  
+- Consider weighted averages of signals, such as weighted average of trade imbalance and order book imbalance  
+- Lasso regression, genetic programming  
+- ...
+
 **Models**
 
-This project only provides a baseline. More advanced models are welcomed:
-- CNN
-- GRU/LSTM
-- XGBoost, AdaBoost, GBDT, LightGBM
-- Attention, Auto-encoder
-- TabNet
-- Pre-trained models
-- .....
+This project only provides a baseline. More advanced models are welcome:
+- CNN  
+- GRU/LSTM  
+- XGBoost, AdaBoost, GBDT, LightGBM  
+- Attention, Auto-encoder  
+- TabNet  
+- Pre-trained models  
+- ...
 
 **Performance Metrics**
 
