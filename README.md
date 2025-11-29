@@ -102,3 +102,16 @@ This project only provides a baseline. More advanced models are welcome:
 **Performance Metrics**
 
 The performance metrics are subject to amendment, including the PnL calculation, commission fee consideration, etc.
+
+👨‍💻 Author
+
+Anurag Kumar
+Final-year student at IIIT Bhagalpur, India
+Passionate about quantitative finance, problem-solving, data structures and algorithms, and software engineering.
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub — it really helps!
+
+Also, feel free to **follow me on GitHub** for more projects and updates:
+👉 https://github.com/anuragpy07
